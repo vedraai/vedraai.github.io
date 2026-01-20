@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- SEO -->
+    <title>Sovereign AI Compliance & Governance Platform | Hemraj Digital Minds</title>
+    <meta name="description"
+        content="The India-first infrastructure for sovereign AI. Ensure compliance, enforce data localization, and automate AI governance with Hemraj Digital Minds." />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Sovereign AI Compliance & Governance Platform | Hemraj Digital Minds" />
+    <meta property="og:description"
+        content="The India-first infrastructure for sovereign AI. Ensure compliance, enforce data localization, and automate AI governance with Hemraj Digital Minds." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Hemraj Digital Minds LLP" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <style>
+        :root {
+            --bg: #ffffff;
+            --bg-alt: #f5f7fa;
+            --primary: #0f172a;
+            --accent: #2563eb;
+            --text: #1f2933;
+            --muted: #6b7280;
+            --border: #e5e7eb;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Inter", system-ui, sans-serif;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .narrow {
+            max-width: 820px;
+        }
+
+        /* Header */
+        header {
+            background: #fff;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Buttons */
+        .btn-primary {
+            background: var(--primary);
+            color: #fff;
+            padding: 0.75rem 1.3rem;
+            border-radius: 4px;
+            font-weight: 500;
+            display: inline-block;
+        }
+
+        /* Hero */
+        .hero {
+            padding: 5rem 0;
+            background: linear-gradient(180deg, #f9fafb, #ffffff);
+        }
+
+        .hero h1 {
+            font-size: 2.6rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero h2 {
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: var(--muted);
+            max-width: 720px;
+        }
+
+        /* Sections */
+        section {
+            padding: 4rem 0;
+        }
+
+        .alt {
+            background: var(--bg-alt);
+        }
+
+        h2 {
+            font-size: 1.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .lead {
+            font-size: 1.1rem;
+            color: var(--muted);
+            margin-bottom: 2rem;
+        }
+
+        /* Lists */
+        .problem-list {
+            padding-left: 1.5rem;
+            font-size: 1.05rem;
+        }
+
+        .problem-list li {
+            margin-bottom: 0.6rem;
+        }
+
+        /* Cards */
+        .grid {
+            display: grid;
+            gap: 1.25rem;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        }
+
+        .card {
+            background: #fff;
+            border: 1px solid var(--border);
+            padding: 1.6rem;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+
+        /* Vision */
+        .vision-text {
+            font-size: 1.5rem;
+            font-weight: 600;
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+
+        /* CTA */
+        .cta {
+            background: var(--primary);
+            color: #fff;
+            text-align: center;
+            padding: 4.5rem 0;
+        }
+
+        .cta p {
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        /* Form */
+        form {
+            display: grid;
+            gap: 1rem;
+        }
+
+        label {
+            display: flex;
+            flex-direction: column;
+            font-size: 0.9rem;
+        }
+
+        input,
+        select {
+            padding: 0.65rem;
+            font-size: 1rem;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+        }
+
+        button {
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            background: #020617;
+            color: #d1d5db;
+            padding: 3rem 0 1.2rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+
+        footer strong {
+            color: #fff;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer ul li {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #1e293b;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            font-size: 0.85rem;
+            text-align: center;
+        }
+
+        .social span {
+            margin: 0 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <div class="logo">Hemraj Digital Minds</div>
+            <nav aria-label="Primary Navigation">
+                <ul>
+                    <li><a href="#platform">Platform</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#vision">Vision</a></li>
+                    <li><a href="#contact" class="btn-primary">Schedule a Consultation</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container">
+                <h1>Building the Infrastructure for Sovereign AI Compliance</h1>
+                <h2>Secure, Auditable, and Localized AI Governance for the Data-Driven Global Economy.</h2>
+                <br />
+                <a href="#contact" class="btn-primary">Schedule a Consultation</a>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about">
+            <div class="container narrow">
+                <h2>About Hemraj Digital Minds LLP</h2>
+                <p class="lead">Empowering Responsible Innovation at the Convergence of AI and Policy.</p>
+
+                <p>
+                    Hemraj Digital Minds LLP is an India-first technology firm dedicated to establishing the global
+                    standard for sovereign AI compliance and governance. We operate where artificial intelligence meets
+                    regulatory policy, enabling enterprises to adopt cutting-edge AI systems that are compliant,
+                    auditable, and geographically controlled by design.
+                </p>
+
+                <p>
+                    As the digital landscape evolves, we bridge the gap between rapid AI adoption and rigorous
+                    regulatory enforcement. We provide the essential infrastructure that ensures your AI usage adheres
+                    to evolving data protection mandates including India’s DPDP Act, GDPR, HIPAA, and SOC 2 without
+                    stifling innovation.
+                </p>
+            </div>
+        </section>
+
+        <!-- Challenge -->
+        <section class="alt">
+            <div class="container">
+                <h2>The Challenge: The AI Infrastructure Gap</h2>
+                <p class="lead">Is Your Organization Ready for the Regulatory Reality of AI?</p>
+                <ul class="problem-list">
+                    <li>Uncontrolled Proliferation</li>
+                    <li>Data Sovereignty Risks</li>
+                    <li>The “Black Box” Problem</li>
+                    <li>Regulatory Blind Spots</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Solution -->
+        <section id="platform">
+            <div class="container">
+                <h2>Our Solution: The Sovereign AI Governance Platform</h2>
+                <p class="lead">Automated. Intelligent. Compliant by Design.</p>
+                <div class="grid">
+                    <div class="card">Automated Discovery</div>
+                    <div class="card">Data Residency Enforcement</div>
+                    <div class="card">Real-Time Policy Control</div>
+                    <div class="card">End-to-End Auditability</div>
+                    <div class="card">RAG Safety & Knowledge Boundaries</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why -->
+        <section class="alt">
+            <div class="container">
+                <h2>Why Choose Hemraj Digital Minds?</h2>
+                <p class="lead">Unmatched Visibility. Uncompromising Sovereignty.</p>
+                <ul class="problem-list">
+                    <li>Sovereign-by-Design</li>
+                    <li>Regulator-Ready Reporting</li>
+                    <li>Continuous Intelligence</li>
+                    <li>Zero-Disruption Integration</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Vision -->
+        <section id="vision">
+            <div class="container narrow">
+                <h2>Our Vision</h2>
+                <p class="vision-text">Innovate Responsibly. Grow Sustainably.</p>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta">
+            <div class="container">
+                <h2>Ready to Secure Your AI Future?</h2>
+                <p>Adopt AI with Confidence. Ensure Compliance by Default.</p>
+                <a href="#contact" class="btn-primary">Schedule a Consultation</a>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="alt">
+            <div class="container narrow">
+                <h2>Contact Us</h2>
+                <form id="contactForm">
+                    <label>Full Name<input type="text" required></label>
+                    <label>Work Email Address<input type="email" required></label>
+                    <label>Company Name<input type="text" required></label>
+                    <label>Job Title<input type="text"></label>
+                    <label>
+                        Message / Inquiry Type
+                        <select>
+                            <option>General Inquiry</option>
+                            <option>Compliance Consultation</option>
+                            <option>Partnership</option>
+                            <option>Media / Press</option>
+                        </select>
+                    </label>
+                    <button type="submit" class="btn-primary">Submit</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <strong>Hemraj Digital Minds LLP</strong>
+                <p>Building the infrastructure for Sovereign AI.</p>
+                <p>
+                    123 Enterprise Avenue<br>
+                    New Delhi, India<br>
+                    contact@hemrajdigitalminds.com<br>
+                    +91 90000 00000
+                </p>
+            </div>
+
+            <div>
+                <strong>Sitemap</strong>
+                <ul>
+                    <li>Platform</li>
+                    <li>Compliance</li>
+                    <li>Security</li>
+                    <li>Governance</li>
+                </ul>
+            </div>
+
+            <div>
+                <strong>Company</strong>
+                <ul>
+                    <li>About</li>
+                    <li>Vision</li>
+                    <li>Blog</li>
+                    <li>Press</li>
+                </ul>
+            </div>
+
+            <div>
+                <strong>Resources</strong>
+                <ul>
+                    <li>Knowledge Hub</li>
+                    <li>Whitepapers</li>
+                    <li>Newsletter</li>
+                </ul>
+                <input type="email" placeholder="Your email">
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="social">LinkedIn · Twitter/X · Facebook</div>
+            <div>Privacy Policy · Terms of Service</div>
+            <div>© 2026 Hemraj Digital Minds LLP. All Rights Reserved. Made in India for the World.</div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            alert("Thank you. Your inquiry has been submitted successfully.");
+        });
+    </script>
+
+</body>
+
+</html>
